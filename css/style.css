@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+body {
+    background-image: url(../img/fondo.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100vv;
+}
+
+.contenedor {
+    width: 100%;
+    height: 100vv;
+    background-image: linear-gradient(rgba(5, 10, 5, 0.8), rgba(90, 40, 90, 0.8));
+}
+
+.navbar {
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 130px;
+    cursor: url(index.html), pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.2rem;
+}
+
+
+/*
+Efecto deslizante hoover
+*/
+
+.navbar ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: yellowgreen;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+}
+
+.navbar ul li:hover::before {
+    width: 100%;
+}
+
+/*
+Aqui ya empezamos con CSS de el resto de la pagina
+*/
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: thistle;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+    color:white
+}
