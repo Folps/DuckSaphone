@@ -1,24 +1,40 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
-    background-image: url(../img/fondo.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url(../img/fondo.jpg) no-repeat center center fixed;
     background-size: cover;
     width: 100%;
-    height: 100vv;
+    height: 100vh;
+
+
+}
+
+.logo_contenedor {
+    height: 100%;
+    display: table;
+    float: left;
+}
+
+.logo_contenedor h1 {
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 32px;
+    font-weight: 200;
+
 }
 
 .contenedor {
+
     width: 100%;
-    height: 100vv;
-    background-image: linear-gradient(rgba(5, 10, 5, 0.8), rgba(90, 40, 90, 0.8));
+    background-color: transparent;
+    justify-content: space-between;
 }
 
 .navbar {
@@ -28,6 +44,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .logo {
@@ -45,8 +62,22 @@ body {
 .navbar ul li a {
     text-decoration: none;
     color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.2rem;
+}
+
+/* Input de busqueda redondeado */
+.container-1 input#search {
+    width: 500px;
+    height: 34px;
+    background: white;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: white;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    border-radius: px;
+
 }
 
 
@@ -73,15 +104,110 @@ Efecto deslizante hoover
 Aqui ya empezamos con CSS de el resto de la pagina
 */
 
-h1 {
+#titulo {
     text-align: center;
-    font-size: 50px;
-    color: thistle;
+    font-size: 50pt;
+    color: black;
+    margin: 50px;
+    float: center;
+    font-weight: 500;
 }
 
 table {
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
-    color:white
+    color: white
+}
+
+/* Conciertos */
+
+
+.formatoItalica {
+    font-style: italic;
+    font-weight: bold;
+}
+
+section {
+    margin: 20px;
+    display: inline-block;
+}
+
+section article {
+    background-color: #cccccc;
+    width: 500px;
+    height: 300px;
+    padding: 40px;
+}
+
+section article p {
+    line-height: 4;
+}
+
+.totalConciertos {
+    align-items: justify;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+
+
+/* Formulario */
+form {
+    width: 300px;
+    padding: 16px;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #ccc;
+}
+
+form label {
+    width: 72px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 180px;
+    padding: 3px 10px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    margin: 8px 0;
+    display: inline-block;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 8px 16px;
+    margin-top: 32px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    display: block;
+    color: #fff;
+    background-color: #000;
+}
+
+form input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #f6f6f6;
+    border-radius: 3px;
+    background-color: #f6f6f6;
+    margin: 8px 0;
+    resize: none;
+    display: block;
 }

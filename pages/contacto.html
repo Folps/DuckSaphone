@@ -7,64 +7,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <title>Contacto - DuckSaphone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class='contenedor'>
-            <div class='navbar'>
+    <header class='contenedor'>
+        <div class="navbar ">
+            <div class='logo_contenedor'>
 
-                <ul>
-                    <li><a href='../index.html'>Home</a></li>
-                    <li><a href='tienda.html'>Tienda</a></li>
-                    <li><a href='soporte.html'>Soporte</a></li>
-                    <li><a href='red.html'>Red </a> </li>
-                    <li><a href='contacto.html'>Contacto</a></li>
-                </ul>
+                <h1>DUCK<span>Saphone</span></h1>
+            </div>
+            <ul>
+                <li><a href='../index.html'>Home</a></li>
+                <li><a href='categoria.html'>Categoria</a></li>
+                <li><a href='tienda.html'>Tienda</a></li>
+                <li><a href='red.html'>Red Social</a> </li>
+                <li><a href='contacto.html'>Contacto</a></li>
+            </ul>
+
+            <div class="box">
+                <div class="container-1">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="Buscar..." />
+                </div>
             </div>
         </div>
     </header>
 
-    <article>
-        <h1>Formulario de contacto</h1>
+    <main>
+        <form action="#" target="" method="get" name="formDatosPersonales">
 
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" />
 
-        <form>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="1r Apellido" />
 
-            <label for="nombreContacto">Nombre:</label>
-            <input type="text" id="nombreContacto" placeholder="Nombre" style="width:15%" minlength='0'>
+            <label for="email" />Email</label>
+            <input type="email" name="email" id="email" placeholder="email" required />
 
+            <label for="asunto">Asunto</label>
+            <input type="text" name="asunto" id="asunto" placeholder="titular de la consulta" />
 
-            <label for="email">Email:</label>
-            <input type="number" id='email' placeholder="E-mail" style="width:15%" minlength='0'>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" for="mensaje" placeholder="describe brevemente en menos de 300 carácteres"
+                maxlength="300"></textarea>
 
-
-            <label for="telefono">Telefono:</label>
-            <input type="number" id="telefono" name="Telefono" placeholder="Telefono" style="width:15%" minlength='0'
-                maxlength='20' required>
-            <label for="menuEnvio"> ¿Desea recibir nuestro boletin de ofertas ?:</label>
-
-            <select id="menuEnvio">
-                <option>...</option>
-                <option>Si</option>
-                <option>No</option>
-            </select>
-
-
-            <input type="checkbox" id="chek">
-            <label for="comentarios"> Sos musico?</label><br>
-            <textarea id="comentarios" rows="10" cols="40">Escribe aquí tus comentarios</textarea>
-
-            <input type="button" value="Enviar">
-            <input type="button" value="Reiniciar proceo">
-
+            <input type="submit" name="enviar" value="enviar datos" />
         </form>
-    </article>
+
+
+    </main>
 
 
 
-
-
+    </main>
+    <footer class='footer'>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum assumenda illum temporibus quaerat dolor
+            explicabo. Id at magni, ducimus tempora placeat porro odio commodi animi dolor laborum, nulla quis
+            voluptates?</p>
+        <div class='logos'></div>
+        <div class='googleMaps'></div>
+    </footer>
 
 
 

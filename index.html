@@ -8,63 +8,109 @@
     <title>DuckSaphone</title>
 
     <link rel="stylesheet" href="css/style.css">
-
+    <!-- GOOFLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Barra navegadora-->
     <header class='contenedor'>
         <div class="navbar ">
-            <img src='img/logo.png' class='logo' alt='Logo Principal'></a>
+            <div class='logo_contenedor'>
 
+                <h1>DUCK<span>Saphone</span></h1>
+            </div>
             <ul>
                 <li><a href='index.html'>Home</a></li>
+                <li><a href='pages/categoria.html'>Categoria</a></li>
                 <li><a href='pages/tienda.html'>Tienda</a></li>
-                <li><a href='pages/soporte.html'>Soporte</a></li>
-                <li><a href='pages/red.html'>Red </a> </li>
+                <li><a href='pages/red.html'>Red Social</a> </li>
                 <li><a href='pages/contacto.html'>Contacto</a></li>
             </ul>
-        </div>
+
+            <div class="box">
+                <div class="container-1">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="Buscar..." />
+                </div>
+            </div>
     </header>
     <!--Pagina principal con contenido-->
     <main>
-        <h1>Bienvenido a nuestra tienda de musica</h1>
 
-        <!--Tabla con servicios, lo mejor es implementar mas adelante tablas/flexbox con cada servicio-->
-        <table border="1">
-            <thead>
-                <tr>
-                    <th>Concierto</th>
-                    <th>Precio por persona</th>
-                    <th>Otros servicios</th>
-                </tr>
-            </thead>
 
-            <tbody>
-                <tr>
-                    <td>Red Hot Chilli Peppers - 11/JUN</td>
-                    <td>U$S 99 </td>
-                    <td rowspan="2">
-                        <ul>
-                            <li>Si sos musico y no tenes contactos. Entra a nuestra red social para ubicar bandas en
-                                busca
-                                de musicos cerca de tu zona</li>
-                            <li>Si estas interesado en introducirte en el mundo de la musica y no sabes por donde
-                                empezar. <a href='pages/contacto.html'>Contactanos!!</a></li>
-                            <li>Si estas interesado en buscar integrantes para tu banda, podes buscar integrantes <a
-                                    href='pages/red.html'>aqui! </a> </li>
+        <!-- Video publicitario -->
+        <video width="100%" height="500" controls>
+            <source src="movie.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
 
-                            <li>Tenemos instrumentos de musica a precios muy accesibles</li>
-                        </ul>
-                    </td>
-                </tr>
-                <tr>
-                    <td>L-GANTE - 03/MAR</td>
-                    <td>U$S 45 </td>
-                </tr>
-            </tbody>
 
+        <h1 id='titulo'> Bienvenido a nuestra tienda de musica</h1>
+        <!-- Conciertos principales, lo ideal es hacer con grid/flex mas adelante  -->
+        <div class='totalConciertos'>
+            <section>
+                <article>
+                    <h2 class="concierto0">Título</h2>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus cum magnam eos a commodi,
+                        sequi
+                        possimus iure, eius nemo voluptates fuga debitis!
+                    </p>
+                </article>
+            </section>
+
+            <section>
+                <article>
+                    <h2 class="concierto1">Título</h2>
+                    <p class="formatoItalica"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus cum
+                        magnam eos a commodi, sequi possimus iure, eius nemo voluptates fuga debitis!
+                    </p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h2 class="concierto2">Título</h2>
+                    <p class="formatoItalica"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus cum
+                        magnam eos a commodi, sequi possimus iure, eius nemo voluptates fuga debitis!
+                    </p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h2 class="concierto2">Título</h2>
+                    <p class="formatoItalica"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus cum
+                        magnam eos a commodi, sequi possimus iure, eius nemo voluptates fuga debitis!
+                    </p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h2 class="concierto2">Título</h2>
+                    <p class="formatoItalica"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus cum
+                        magnam eos a commodi, sequi possimus iure, eius nemo voluptates fuga debitis!
+                    </p>
+                </article>
+            </section>
+            <section>
+                <article>
+                    <h2 class="concierto2">Título</h2>
+                    <p class="formatoItalica"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus cum
+                        magnam eos a commodi, sequi possimus iure, eius nemo voluptates fuga debitis!
+                    </p>
+                </article>
+            </section>
+
+        </div>
     </main>
+    <footer class='footer'>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum assumenda illum temporibus quaerat dolor
+            explicabo. Id at magni, ducimus tempora placeat porro odio commodi animi dolor laborum, nulla quis
+            voluptates?</p>
+        <div class='logos'></div>
+        <div class='googleMaps'></div>
+    </footer>
 
     <!--Agregar footer-->
 </body>

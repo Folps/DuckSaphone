@@ -6,25 +6,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Red Social</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
-    <header>
-        <div class='contenedor'>
-            <div class='navbar'>
+    <header class='contenedor'>
+        <div class="navbar ">
+            <div class='logo_contenedor'>
 
-                <ul>
-                    <li><a href='../index.html'>Home</a></li>
-                    <li><a href='tienda.html'>Tienda</a></li>
-                    <li><a href='soporte.html'>Soporte</a></li>
-                    <li><a href='red.html'>Red </a> </li>
-                    <li><a href='contacto.html'>Contacto</a></li>
-                </ul>
+                <h1>DUCK<span>Saphone</span></h1>
+            </div>
+            <ul>
+                <li><a href='../index.html'>Home</a></li>
+                <li><a href='categoria.html'>Categoria</a></li>
+                <li><a href='tienda.html'>Tienda</a></li>
+                <li><a href='red.html'>Red Social</a> </li>
+                <li><a href='contacto.html'>Contacto</a></li>
+            </ul>
+
+            <div class="box">
+                <div class="container-1">
+                    <span class="icon"><i class="fa fa-search"></i></span>
+                    <input type="search" id="search" placeholder="Buscar..." />
+                </div>
             </div>
         </div>
     </header>
 
+    <main>
+
+        <form name="login">
+            <table width="200" border="0">
+                <tr>
+                    <th scope="row">
+                        <h2>Usuario</h2>
+                    </th>
+                    <td>
+                        
+                        <span class="cnt">
+                            <input name="usuario" type="text" class="Input" value="" size="20" />
+                        </span></td>
+                </tr>
+                <tr>
+                    <th height="33" scope="row">
+                        <h2>Clave</h2>
+                    </th>
+                    <td><span class="cnt">
+                            <input name="password" type="password" class="Input" value="" size="20" />
+                        </span></td>
+                    <td><span class="cnt">
+                            <input value="Entrar" " type="button" class="boton" />
+                        </span></td>
+                </tr>
+                <tr>
+                    <th scope="row"><input type="reset" name="Borrar" id="Borrar" value="Reset" class="boton" /></th>
+                </tr>
+            </table>
+        </form>
+    </main>
+
+</main>
+<footer class='footer'>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum assumenda illum temporibus quaerat dolor
+        explicabo. Id at magni, ducimus tempora placeat porro odio commodi animi dolor laborum, nulla quis
+        voluptates?</p>
+    <div class='logos'></div>
+    <div class='googleMaps'></div>
+</footer>
 </body>
 
 </html>
