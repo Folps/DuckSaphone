@@ -145,7 +145,7 @@ section article p {
 }
 
 .totalConciertos {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -213,7 +213,8 @@ textarea {
     display: block;
 }
 
-.totalConciertosTienda{
+.totalConciertosTienda {
     display: grid;
     grid-template-columns: 700px 50px;
-    justify-items: space-between;
+    justify-items: space-between
+}
