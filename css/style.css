@@ -242,4 +242,9 @@ textarea {
     border: solid 1px burlywood;
 }
 
+
+.conciertoPreferencia{
+
+display: grid;
+grid-template-columns: auto auto auto;
 }
