@@ -218,3 +218,25 @@ textarea {
     grid-template-columns: 700px 50px;
     justify-items: space-between
 }
+
+
+
+/* Grid desafio nueva maqueta */
+
+
+.grid-container {
+    display: grid;
+    background-color: coral;
+    padding: 5px 0;
+
+    grid-template-columns: 60px auto auto;
+}
+
+
+.grid-container div {
+
+    background-color: darkgoldenrod;
+    padding: 5px;
+
+    border: solid 1px burlywood;
+}
